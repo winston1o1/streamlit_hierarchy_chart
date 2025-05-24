@@ -3,6 +3,7 @@ exclude example.py
 exclude utils.py
 exclude example.png
 exclude test.csv
+exclude requirements.txt
 exclude test.ipynb
 prune scripts
 prune __pycache__
