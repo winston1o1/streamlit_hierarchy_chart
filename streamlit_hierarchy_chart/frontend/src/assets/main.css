@@ -1,0 +1,67 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0rem;
+  font-weight: normal;
+  overflow: auto;
+}
+.header {
+  font-size: 16px;
+  color: #000000;
+}
+.value {
+  font-size: 15px;
+}
+.comparative-value {
+  font-size: 13px;
+}
+
+.bg-danger {
+  background-color: #ff0000 !important;
+}
+
+.bg-success {
+   background-color: #03ad00 !important;
+}
+.p-organizationchart-node {
+  min-width:120px;
+}
+
+.p-organizationchart-node-selected.bg-success {
+  background-color: #0b270b !important;
+}
+.p-organizationchart-node-selected.bg-danger {
+  background-color: #270c0c !important;
+}
+
+:not(.p-organizationchart-node-selected).bg-success:hover {
+  background-color: #095d07 !important;
+}
+:not(.p-organizationchart-node-selected).bg-danger:hover {
+  background-color: #810404 !important;
+}
+
+button#save-to-img-btn {
+  color: #232323;
+  background: #f48829;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 600;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em #00aeee;
+  cursor: pointer;
+}
+
+/* button#save-to-img-btn:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+} */
+
+button#save-to-img-btn:active {
+  color: #000000;
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
