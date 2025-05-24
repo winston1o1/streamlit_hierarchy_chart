@@ -53,7 +53,6 @@ six==1.17.0
 smmap==5.0.2
 stack-data==0.6.3
 streamlit==1.45.1
--e git+https://github.com/winston1o1/streamlit_hierarchy_chart.git@9de5a76a033bcee93496e3db39828daa67be7f22#egg=streamlit_custom_component
 tenacity==9.1.2
 toml==0.10.2
 tornado==6.5
