@@ -78,11 +78,12 @@ export default defineComponent({
       if (el === null){
         return
       }
-      const orgChartElement = document.querySelector('.p-organizationchart-table') as HTMLElement
-      if (orgChartElement === null){
-        return
-      }
-      const widthx = orgChartElement.offsetWidth +50
+      // const orgChartElement = document.querySelector('.p-organizationchart-table') as HTMLElement
+      // if (orgChartElement === null){
+      //   return
+      // }
+      const widthx = el.offsetWidth +50
+      // console.log(widthx)
       html2canvas(el,{scale:3,width:widthx,backgroundColor:'#EDEADE'}).then(canvas => {
         this.screenShot = canvas.toDataURL("image/png");
         const link = document.createElement('a');
