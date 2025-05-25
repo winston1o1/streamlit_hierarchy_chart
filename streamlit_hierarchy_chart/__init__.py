@@ -36,7 +36,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/dist")
-    print(build_dir)
+
     _component_func = components.declare_component(
         "hierarchy_chart",
         path=build_dir
