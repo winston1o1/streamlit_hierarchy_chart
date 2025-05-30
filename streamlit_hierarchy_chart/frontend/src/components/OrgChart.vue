@@ -82,8 +82,10 @@ export default defineComponent({
       // if (orgChartElement === null){
       //   return
       // }
-      const widthx = el.offsetWidth +50
-      // console.log(widthx)
+
+      const availableWidths = [el.clientWidth,el.scrollWidth,el.offsetWidth]
+      const widthx = Math.max(...availableWidths) + 50
+
       html2canvas(el,{scale:3,width:widthx,backgroundColor:'#EDEADE'}).then(canvas => {
         this.screenShot = canvas.toDataURL("image/png");
         const link = document.createElement('a');
