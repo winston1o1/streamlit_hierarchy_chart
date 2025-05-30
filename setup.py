@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="streamlit-hierarchy-chart",
-    version="0.0.3",
+    version="0.0.4",
     author="Winston Ssentongo",
     author_email="winstondavid96@gmail.com",
     description="Streamlit component that allows you to create Hierarchy charts",
